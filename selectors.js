@@ -21,29 +21,36 @@ document.querySelector('.someClass h1 p');
 
 // /html/body
 
+
 // Tag anywhere
 
 // //input
+
 
 // Direct Children
 
 // //ul/li/a
 
+
 // Descendants
 
 // //div/a
+
 
 // Any Element
 
 // //*
 
+
 // Any Descendants
 
 // //div//*
 
+
 // Attribute Value Equality
 
 // //li[@class='zcm__item']
+
 
 // Attribute Condition AND
 
@@ -51,9 +58,11 @@ document.querySelector('.someClass h1 p');
 
 // //img[@width<20 and @height<20]
 
+
 // Attribute Condition OR
 
 // //input[@name='q' or @id='search_form_input']
+
 
 // Contains Function
 
@@ -61,10 +70,38 @@ document.querySelector('.someClass h1 p');
 
 // //div[contains(@class, ‘result__snippet’)]
 
+
 // Starts with function
 
 // //div[starts-with(@class, ‘result’)]
 
+
 // Logical not function
 
 // //a[not(contains(@class, 'header'))]
+
+
+// contains or not contain text 
+
+// //div[contains(@class, 'result__snippet')][contains(., 'bamboo')]
+// //div[contains(@class, 'result__snippet')][not(contains(., 'bamboo'))]
+
+
+// index in xpath
+
+// (//div[contains(@class, 'result__snippet')])[3]
+
+
+// elements relative to other elements using advanced relationships
+// //a to get any link on the page, square brackets for a conditional statement, and then .//image:
+
+//a[.//img]
+
+
+// relationships to the current node.
+
+//a[contains(@class, 'zcm__link')]
+
+//a[contains(@class, 'zcm__link')][preceding::a[@data-zci-link='web']]
+
+
